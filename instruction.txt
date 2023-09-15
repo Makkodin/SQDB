@@ -1,0 +1,22 @@
+create table flowcell_test (
+	flowcellID text primary key,
+	seqSUBTYPE text not null
+)
+
+insert into flowcell (flowcellid, seqsubtype) values('200629_A00919_0083_AH23J2DSXY', '10X'),
+('200720_A01013_0095_AH7KFCDSXY', '10X')
+
+
+
+export FLASK_APP=main.py FLASK_ENV=development
+flask run
+
+
+
+
+1) Создание Flask (ручки): main.py
+2) Создание react-app: npx create-react-app front
+3) СОздание static folder: cd front && npm run-script build && cd ..
+
+4) Запуск Flask : FLASK_APP=main.py FLASK_ENV=development flask run --host=10.100.141.14 --port=8087
+5) Запуск npm : cd front && npm start
