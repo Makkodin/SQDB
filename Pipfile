@@ -4,18 +4,18 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-postgres = "*"
-flask = "*"
-flask-cors = "*"
-python-dotenv = "*"
-psycopg2 = "*"
 jsonify = "*"
-react = "*"
-sqlalchemy = "*"
 matplotlib = "*"
 pandas = "*"
-tqdm = "*"
+postgres = "*"
+psycopg2 = "*"
+python-dotenv = "*"
+react = "*"
+sqlalchemy = "*"
 sqlalchemy-utils = "*"
+tqdm = "*"
+flask = "*"
+flask-cors = "*"
 
 [dev-packages]
 ipykernel = "*"
