@@ -1,0 +1,51 @@
+@import url('https://fonts.cdnfonts.com/css/font');
+
+.main-page {
+  position: absolute;
+  width: 90%;
+  height: 95%;
+  left: 0px;
+  background-color:rgb(255, 255, 255);
+  border-radius: 0% 5% 70% 0%;
+}
+
+.main-page a{
+  font-size: 50px;
+  font-family: 'Font', sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-left: 2%;
+}
+
+.main-page b{
+  font-size: 30px;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+}
+
+.main-page p{
+  background: rgb(209, 252, 252);
+  padding: 20px;
+  margin: 2%;
+  margin-left: 0%;
+  width: 90%;
+  border-radius: 0% 5% 30% 0%;
+  box-shadow: 10px -10px teal;
+}
+
+
+/*position: absolute;*/
+/*Задний фон*/
+/*background-color: #8b8b8b;*/
+/*ширина*/
+/*width: 40%;*/
+/*высота*/
+/*height: 20%;*/
+/*Смещение относительно верха работает если position не static*/
+/*top: 3%;*/
+/*отступ слева*/
+/*left: 30%;*/
+/*Закругленные углы*/
+/*border-radius: 30px;  */

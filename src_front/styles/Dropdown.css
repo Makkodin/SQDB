@@ -1,0 +1,117 @@
+:root {
+    --primary-bg: #242526;
+    --secondary-bg: #ffffff;
+    --prymary-text-color: #555;
+    --secondary-text-color: #cecece;
+    --border-radius: 8px;
+    --speed: 500ms;
+  
+  }
+
+ul{
+    list-style: none;
+  }
+  
+a {
+    text-decoration: none;
+  }
+  
+.menu-trigger img{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    border: solid;
+  }
+  
+.dropdown-menu {
+    position: absolute;
+    top: 160px;
+    right: 50px;
+    background-color: #ffffff;
+    border-radius: var(--border-radius);
+    padding: 10px 20px;
+    width: 200px;
+    border-color: white;
+    z-index: 1;
+  }
+  
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    background: var(--secondary-bg);
+    transform: rotate(45deg);
+  }
+  
+.dropdown-menu.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--speed) ease;
+  }
+  
+.dropdown-menu.inactive{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: var(--speed) ease;
+  }
+  
+h3{
+    width: 90%;
+    text-align: left;
+    font-size: 18px;
+    padding: 5px 0;
+    font-weight: 500;
+    color: var(--prymary-text-color);
+    line-height: 1.2rem;
+  }
+  
+h3 span{
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    font-weight: 400;
+  }
+  
+  
+.dropdown-menu ul li{
+    padding: 10px 0;
+    border-top: 1px solid rgba(0,0,0,0.05);
+  }
+  
+.dropdown-menu ul li:hover a{
+    color: rgb(39, 30, 168);
+    cursor: pointer;
+  }
+  
+.dropdown-menu ul li:hover img{
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+.dropdownItem{
+    display: flex;
+    margin: 2px -20px;
+  }
+  
+.dropdownItem img{
+    max-width: 25px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition: var(--speed);
+  }
+  
+.dropdownItem a{
+    max-width: 250px;
+    margin-left: 10px;
+    transition: var(--speed);
+  }
